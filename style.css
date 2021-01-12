@@ -735,7 +735,7 @@ h1 {
 }
 .partners p {
     margin: 2px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
 }
 .partners p a {
@@ -746,7 +746,7 @@ h1 {
 }
 h4 {
     color: #fff!important;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 
@@ -844,7 +844,12 @@ h4 {
 .bg-presentation {
     background-image: url("img/image-de-presentation.bmp");
 }
-
+.footer-title {
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+    font-weight: bold;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
