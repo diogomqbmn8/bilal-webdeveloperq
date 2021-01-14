@@ -650,7 +650,6 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    font-weight: 400;
     color: #575757;
 }
 
@@ -709,6 +708,7 @@ h2 {
     line-height: 1.4em;
     font-style: italic;
     font-weight: bold;
+    color: #000000;
 }
 
 h3 {
@@ -725,7 +725,7 @@ h3 {
 }
 
 h1 {
-    color: #333333!important;
+    color: #fff;
 }
 .partners {
     display: flex;
@@ -794,10 +794,6 @@ h4 {
     background-color: #F3976C;
 }
 
-.tc-white {
-    color: #F3976C!important;
-}
-
 .btn-atomic-tangerine {
     background: #F3976C;
     color: #FFFFFF!important;
@@ -850,6 +846,7 @@ h4 {
     color: #fff;
     font-weight: bold;
 }
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1064,4 +1061,9 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+.white
+{
+    color: #fff;
+    z-index: 10;
 }
