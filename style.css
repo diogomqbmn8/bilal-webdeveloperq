@@ -682,6 +682,8 @@ p {
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
+    color: #fff;
+    font-size: 18px;
 }
 
 .h1 {
@@ -756,7 +758,8 @@ h4 {
 }
 
 .white {
-    color: #FFFFFF!important;
+    color: #fff;
+
 }
 
 .portfolio-thumb {
@@ -846,7 +849,28 @@ h4 {
     color: #fff;
     font-weight: bold;
 }
-
+.padding-zero {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+.activity-domain {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+.activity-domain p {
+    color: #fad5c4;
+}
+.contact-padding {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0;
+}
+#bloc-7 {
+    padding-left: 20px;
+    padding-right: 20px;
+}
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1061,9 +1085,4 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
-}
-.white
-{
-    color: #fff;
-    z-index: 10;
 }
