@@ -534,8 +534,17 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
+    width: 55%;
+    justify-content: center;
 }
-
+a .img-responsive
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-left: 40%;
+}
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -580,7 +589,6 @@ a[data-lightbox]:hover img {
     padding: 20px;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
-    position: absolute;
     left: 15px;
     right: 15px;
     bottom: 5px;
