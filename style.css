@@ -534,17 +534,8 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
-    width: 55%;
-    justify-content: center;
 }
-a .img-responsive
-{
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    align-items: center;
-    margin-left: 40%;
-}
+
 a[data-lightbox]:hover::before {
     content: "+";
     font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
@@ -589,6 +580,7 @@ a[data-lightbox]:hover img {
     padding: 20px;
     color: #FFF;
     background: rgba(0, 0, 0, .5);
+    position: absolute;
     left: 15px;
     right: 15px;
     bottom: 5px;
@@ -658,7 +650,8 @@ label,
 .btn,
 a {
     font-family: "helvetica";
-    color: #575757;
+    font-weight: 400;
+    color: #575757!important;
 }
 
 .container {
@@ -684,14 +677,12 @@ a {
 }
 
 p {
-    font-size: 14px;
+    font-size: 11px;
 }
 
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-    color: #fff;
-    font-size: 15px;
 }
 
 .h1 {
@@ -714,15 +705,12 @@ p {
 }
 
 h2 {
-    font-size: 20px;
+    font-size: 22px;
     line-height: 1.4em;
-    font-style: italic;
-    font-weight: bold;
-    color: #000000;
 }
 
 h3 {
-    font-size: 18px;
+    font-size: 15px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
@@ -735,29 +723,11 @@ h3 {
 }
 
 h1 {
-    color: #fff;
+    color: #333333!important;
 }
-.partners {
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-    padding-bottom: 30px;
-}
-.partners p {
-    margin: 2px;
-    font-size: 14px;
-    color: #fff;
-}
-.partners p a {
-    text-decoration: none;
-}
-.partners p a:hover {
-    color: #fff;
-}
+
 h4 {
-    color: #fff!important;
-    font-size: 18px;
-    font-weight: bold;
+    color: #333333!important;
 }
 
 .icons {
@@ -766,8 +736,7 @@ h4 {
 }
 
 .white {
-    color: #fff;
-
+    color: #FFFFFF!important;
 }
 
 .portfolio-thumb {
@@ -802,16 +771,20 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #935c41;
+    background-color: #F3976C;
+}
+
+.tc-white {
+    color: #F3976C!important;
 }
 
 .btn-atomic-tangerine {
-    background: #935c41;
+    background: #F3976C;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #935c41!important;
+    background: #c27956!important;
     color: #FFFFFF!important;
 }
 
@@ -845,46 +818,13 @@ h4 {
 }
 
 .bg-banniere {
-    background-image: url("img/la-chouette-agence-banniere.webp");
+    background-image: url("img/la-chouette-agence-banniere.jpg");
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.bmp");
 }
-.footer-title {
-    text-align: center;
-    font-size: 18px;
-    color: #fff;
-    font-weight: bold;
-}
-.padding-zero {
-    padding-bottom: 0;
-    margin-bottom: 0;
-}
-.activity-domain {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-.activity-domain p {
-    color: #fad5c4;
-}
-.contact-padding {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0;
-}
-#bloc-7 {
-    padding-left: 20px;
-    padding-right: 20px;
-}
-h6
-{
-    color: #fff;
-    font-size: 16px;
-    font-weight: 550;
-}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -908,13 +848,13 @@ h6
     }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
     .b-parallax {
         background-attachment: scroll;
     }
 }
 
-@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
     .b-parallax {
         background-attachment: scroll;
     }
@@ -932,6 +872,10 @@ h6
         overflow-x: hidden;
         position: relative;
     }
+    .bloc {
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
+    }
     .bloc-group,
     .bloc-group .bloc {
         display: block;
@@ -940,6 +884,8 @@ h6
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
+        padding-left: constant(safe-area-inset-left);
+        padding-right: constant(safe-area-inset-right);
     }
 }
 
