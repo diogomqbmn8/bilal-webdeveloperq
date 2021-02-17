@@ -534,16 +534,16 @@ a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
-    width: 55%;
-    justify-content: center;
 }
 a .img-responsive
 {
-    display: flex;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     justify-content: center;
     text-align: center;
     align-items: center;
-    margin-left: 40%;
+    
 }
 a[data-lightbox]:hover::before {
     content: "+";
