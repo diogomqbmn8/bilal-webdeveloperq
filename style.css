@@ -535,15 +535,16 @@ a[data-lightbox] {
     display: block;
     text-align: center;
 }
-a .img-responsive
-{
+a .img-responsive {
     display: block;
     margin-left: auto;
     margin-right: auto;
     justify-content: center;
     text-align: center;
     align-items: center;
-    
+}
+.padding-bottom {
+    padding-bottom: 44px;
 }
 a[data-lightbox]:hover::before {
     content: "+";
@@ -849,7 +850,7 @@ h4 {
 }
 
 .bg-presentation {
-    background-image: url("img/image-de-presentation.webp");
+    background-image: url("img/image-de-presentation.jpg");
 }
 .footer-title {
     text-align: center;
