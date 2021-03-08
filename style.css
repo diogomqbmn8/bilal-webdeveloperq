@@ -719,7 +719,6 @@ p {
 h2 {
     font-size: 20px;
     line-height: 1.4em;
-    font-style: italic;
     font-weight: bold;
     color: #000000;
 }
@@ -737,6 +736,9 @@ h3 {
     box-shadow: 0px 0px 0px #000000;
 }
 
+.text-italic {
+    font-style: italic;
+}
 h1 {
     color: #fff;
 }
@@ -758,8 +760,9 @@ h1 {
     color: #fff;
 }
 h4 {
-    color: #fff!important;
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 1.4em;
+    font-style: italic;
     font-weight: bold;
 }
 
